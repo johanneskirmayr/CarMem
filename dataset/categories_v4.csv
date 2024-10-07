@@ -1,0 +1,42 @@
+Main Category#Subcategory#Preference Type#Detail Category#Attributes
+Points of Interest#Restaurant#MP#Favorite Cuisine#Italian, Chinese, Mexican, Indian, American
+Points of Interest#Restaurant#MP#Preferred Restaurant Type#Fast food, Casual dining, Fine dining, Buffet
+Points of Interest#Restaurant#MP#Fast Food Preference#BiteBox Burgers, GrillGusto, SnackSprint, ZippyZest, WrapRapid
+Points of Interest#Restaurant#MNP#Desired Price Range#cheap, normal, expensive
+Points of Interest#Restaurant#MP#Dietary Preferences#Vegetarian, Vegan, Gluten-Free, Dairy-Free, Halal, Kosher, Nut Allergies, Seafood Allergies
+Points of Interest#Restaurant#MNP#Preferred Payment method#Cash, Card
+Points of Interest#Gas Station#MP#Preferred Gas Station#PetroLux, FuelNexa, GasGlo, ZephyrFuel, AeroPump
+Points of Interest#Gas Station#MNP#Willingness to Pay Extra for Green Fuel#Yes, No (cheapest prefered)
+Points of Interest#Gas Station#MNP#Price Sensitivity for Fuel#Always cheapest, Rather cheapest, Price is irrelevant
+Points of Interest#Charging Station(in public)#MP#Preferred Charging Network#ChargeSwift, EcoPulse Energy, VoltRise Charging, AmpFlow Solutions, ZapGrid Power
+Points of Interest#Charging Station(in public)#MNP#Preferred type of Charging while traveling#AC, DC, HPC
+Points of Interest#Charging Station(in public)#MNP#Preferred type of Charging when being at everyday points (f.e. work, grocery, restaurant)#AC, DC, HPC
+Points of Interest#Charging Station(in public)#MP#Charging Station Amenities#On-site amenities (Restaurant/cafes), Wi-Fi availability, Seating area, Restroom facilities
+Points of Interest#Grocery Shopping#MP#Preferred Supermarket Chains#MarketMingle, FreshFare Hub, GreenGroove Stores, BasketBounty Markets, PantryPulse Retail
+Points of Interest#Grocery Shopping#MNP#Preference for Local Markets/Farms or Supermarket#Local Markets/Farms, Supermarket
+Navigation and Routing#Routing#MP#Avoidance of Specific Road Types#Highways, Toll roads, Unpaved roads
+Navigation and Routing#Routing#MNP#Priority for Shortest Time or Shortest Distance#Shortest Time, Shortest Distance
+Navigation and Routing#Routing#MNP#Tolerance for Traffic#Low, Medium, High
+Navigation and Routing#Traffic and Conditions#MNP#Traffic Information Source Preferences#In-car system, NavFlow Updates, RouteWatch Alerts, TrafficTrendz Insights
+Navigation and Routing#Traffic and Conditions#MNP#Willingness to Take Longer Route to Avoid Traffic#Yes, No (traffic tolerated for fastest route)
+Navigation and Routing#Parking#MNP#Preferred Parking Type#On-street, Off-street, Parking-house
+Navigation and Routing#Parking#MNP#Price Sensitivity for Paid Parking#Always considers price first, Sometimes considers price, Never considers price
+Navigation and Routing#Parking#MNP#Distance Willing to Walk from Parking to Destination#less than 5 min (accepting possible higher cost), less than 10 min (accepting possible higher cost), not relevant (closest with low cost)
+Navigation and Routing#Parking#MNP#Preference for Covered Parking#Yes, Indifferent to Covered Parking
+Navigation and Routing#Parking#MNP#Need for Handicapped Accessible Parking#Yes
+Navigation and Routing#Parking#MNP#Preference for Parking with Security#Yes, Indifferent to Parking Security
+Vehicle Settings and Comfort#Climate Control#MNP#Preferred Temperature#18 degree Celcius, 19 degree Celcius, 20 degree Celcius, 21 degree Celcius, 22 degree Celcius, 23 degree Celcius, 24 degree Celcius, 25 degree Celcius
+Vehicle Settings and Comfort#Climate Control#MNP#Fan Speed Preferences#Low, Medium, High
+Vehicle Settings and Comfort#Climate Control#MNP#Airflow Direction Preferences#Face, Feet, Centric, Combined
+Vehicle Settings and Comfort#Climate Control#MNP#Seat Heating Preferences#Low, Medium, High
+Vehicle Settings and Comfort#Lighting and Ambience#MNP#Interior Lighting Brightness Preferences#Low, Medium, High
+Vehicle Settings and Comfort#Lighting and Ambience#MNP#Interior Lighting Ambient Preferences#Warm, Cool
+Vehicle Settings and Comfort#Lighting and Ambience#MP#Interior Lightning Color Preferences#Red, Blue, Green, Yellow, White, Pink
+Entertainment and Media#Music#MP#Favorite Genres#Pop, Rock, Jazz, Classical, Country, Rap
+Entertainment and Media#Music#MP#Favorite Artists/Bands#Max Jettison (Pop), Melody Raven (Pop), Melvin Dunes (Jazz), Ludwig van Beatgroove (Classical), Wolfgang Amadeus Harmonix (Classical), Taylor Winds (Country/Pop), Ed Sherwood (Pop/Folk), TwoPacks (Rap)
+Entertainment and Media#Music#MP#Favorite Songs#Envision by Jon Lemon (Rock), Dreamer's Canvas by Lenny Visionary (Folk), Jenny's Dance by Max Rythmo (Disco), Clasp My Soul by The Harmonic Five (Soul), Echoes of the Heart by Adeena (R&B), Asphalt Anthems by Gritty Lyricist (Rap), Cosmic Verses by Nebula Rhymes (Hip-Hop/Rap)
+Entertainment and Media#Music#MNP#Preferred Music Streaming Service#SonicStream, MelodyMingle, TuneTorrent, HarmonyHive, RhythmRipple
+Entertainment and Media#Radio and Podcasts#MNP#Preferred Radio Station#EchoWave FM, RhythmRise Radio, SonicSphere 101.5, VibeVault 88.3, HarmonyHaven 94.7
+Entertainment and Media#Radio and Podcasts#MP#Favorite Podcast Genres#News, Technology, Entertainment, Health, Science
+Entertainment and Media#Radio and Podcasts#MP#Favorite Podcast Shows#GlobalGlimpse News, ComedyCraze, ScienceSync, FantasyFrontier, WellnessWave
+Entertainment and Media#Radio and Podcasts#MNP#General News Source#NewsNexus, WorldPulse, CurrentConnect, ReportRealm, InfoInsight

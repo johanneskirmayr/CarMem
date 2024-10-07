@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+        },
+    ]
+}
+
+// python .\dataset\TopDial-main\dialog_simulation.py --profile_path dataset/TopDial-main/seed_dataset/caches/db_slot/slot_profiles.json --cached_seed_path dataset/userprofiles/train_user_profiles.jsonl --model_name gpt-4-1106-preview

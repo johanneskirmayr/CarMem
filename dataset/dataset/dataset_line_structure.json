@@ -1,0 +1,452 @@
+{
+    "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+    "user_profile": "{'Age': 80, 'Technological_Proficiency': 'middle'}",
+    "user_conversation_style": "Conversational: casual, human-like manner.",
+    "car_location_city": "Mariani, India",
+    "user_preferences": [
+        {
+            "Main Category": "Points of Interest",
+            "Subcategory": "Restaurant",
+            "Preference Type": "MP",
+            "Detail Category": "Favorite Cuisine",
+            "Attributes": "Italian",
+            "Weight": 0.004878048780487805
+        },
+        {
+            "Main Category": "Points of Interest",
+            "Subcategory": "Charging Station(in public)",
+            "Preference Type": "MNP",
+            "Detail Category": "Preferred type of Charging when being at everyday points (f.e. work, grocery, restaurant)",
+            "Attributes": "AC",
+            "Weight": 0.024390243902439025
+        },
+        {
+            "Main Category": "Points of Interest",
+            "Subcategory": "Charging Station(in public)",
+            "Preference Type": "MP",
+            "Detail Category": "Charging Station Amenities",
+            "Attributes": "Wi-Fi availability",
+            "Weight": 0.006097560975609756
+        },
+        {
+            "Main Category": "Navigation and Routing",
+            "Subcategory": "Routing",
+            "Preference Type": "MNP",
+            "Detail Category": "Priority for Shortest Time or Shortest Distance",
+            "Attributes": "Shortest Distance",
+            "Weight": 0.024390243902439025
+        },
+        {
+            "Main Category": "Navigation and Routing",
+            "Subcategory": "Traffic and Conditions",
+            "Preference Type": "MNP",
+            "Detail Category": "Traffic Information Source Preferences",
+            "Attributes": "NavFlow Updates",
+            "Weight": 0.024390243902439025
+        },
+        {
+            "Main Category": "Navigation and Routing",
+            "Subcategory": "Parking",
+            "Preference Type": "MNP",
+            "Detail Category": "Preferred Parking Type",
+            "Attributes": "On-street",
+            "Weight": 0.024390243902439025
+        },
+        {
+            "Main Category": "Navigation and Routing",
+            "Subcategory": "Parking",
+            "Preference Type": "MNP",
+            "Detail Category": "Preference for Parking with Security",
+            "Attributes": "Yes",
+            "Weight": 0.024390243902439025
+        },
+        {
+            "Main Category": "Vehicle Settings and Comfort",
+            "Subcategory": "Climate Control",
+            "Preference Type": "MNP",
+            "Detail Category": "Fan Speed Preferences",
+            "Attributes": "High",
+            "Weight": 0.024390243902439025
+        },
+        {
+            "Main Category": "Entertainment and Media",
+            "Subcategory": "Music",
+            "Preference Type": "MP",
+            "Detail Category": "Favorite Songs",
+            "Attributes": "Asphalt Anthems by Gritty Lyricist (Rap)",
+            "Weight": 0.003484320557491289
+        },
+        {
+            "Main Category": "Entertainment and Media",
+            "Subcategory": "Radio and Podcasts",
+            "Preference Type": "MP",
+            "Detail Category": "Favorite Podcast Genres",
+            "Attributes": "Health",
+            "Weight": 0.004878048780487805
+        }
+    ],
+    "data": [
+        {
+            "conversation_uuid": "c5f609a8-1438-4f1a-b787-df335ff9549a",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Points of Interest; Restaurant; Favorite Cuisine; Italian",
+            "extraction_conversation": [
+                {
+                    "USER": "I've been craving some good Italian food lately, can you suggest a nice Italian restaurant nearby?"
+                },
+                {
+                    "ASSISTANT": "Certainly, there's an Italian restaurant called La Cucina, 4 kilometers away with excellent reviews. Shall I navigate there?"
+                },
+                {
+                    "USER": "La Cucina sounds perfect, please turn on the navigation."
+                },
+                {
+                    "ASSISTANT": "Navigation to La Cucina is now active. You will arrive in approximately 12 minutes. Enjoy your meal!"
+                }
+            ],
+            "next_conversation_question": "I'm feeling hungry, can you recommend a place to eat?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "very high - no questions",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "4",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': \"I'm really hungry right now\", 'Assistant': 'I have found these destinations for the category restaurant. Which one should I select?'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, could you look up some Italian restaurants nearby? I'm in the mood for my favorite pasta.",
+                "question_negate_preference": "You know, I think I'm over Italian food for now. Let's skip that cuisine altogether next time we're looking for a place to eat.",
+                "question_different_preference": "I've been craving a good burger lately. Can we find American restaurants instead from now on?",
+                "different_attribute": "American"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": true
+        },
+        {
+            "conversation_uuid": "a952e62a-1928-4d62-b7fb-a08bac46dee3",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Points of Interest; Charging Station(in public); Preferred type of Charging when being at everyday points (f.e. work, grocery, restaurant); AC",
+            "extraction_conversation": [
+                {
+                    "USER": "I always prefer AC charging for my car when visiting points of interest like work or the grocery store, can you find me a public charging station nearby with that option"
+                },
+                {
+                    "ASSISTANT": "Certainly, I found several AC charging stations close to our current location in Mariani, India. The nearest one is at Green Park Plaza, just 3 km away and it's operational right now. Would you like directions to there?"
+                }
+            ],
+            "next_conversation_question": "I'm heading out to a new restaurant for dinner, can you locate a place to charge my car while I eat?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "high",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "2",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': 'Take me to HPC', 'Assistant': 'I have found multiple destinations in the category HPC. Which one should I select?'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, while we're out running errands, can you make sure to show me spots with AC charging stations, please?",
+                "question_negate_preference": "I've been thinking, I don't really want AC charging at my usual stops anymore, can we avoid those?",
+                "question_different_preference": "For my regular hangouts, like the office or the diner, I'd prefer to find DC charging stations from now on, could you help with that?",
+                "different_attribute": "DC"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": true
+        },
+        {
+            "conversation_uuid": "72df49d4-7cd9-4e25-9cf1-9b7038d83a46",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Points of Interest; Charging Station(in public); Charging Station Amenities; Wi-Fi availability",
+            "extraction_conversation": [
+                {
+                    "USER": "I'd like to find a charging station nearby with Wi-Fi so I can check my emails while I wait."
+                },
+                {
+                    "ASSISTANT": "Certainly, there's a charging station with Wi-Fi 3 kilometers away from Mariani, India. Would you like directions to it?"
+                }
+            ],
+            "next_conversation_question": "Can you suggest a good place to stop for a while on my route?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "high",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "2",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': 'Take me to HPC', 'Assistant': 'I have found multiple destinations in the category HPC. Which one should I select?'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, could you locate a charging station that has WiFi available for me?",
+                "question_negate_preference": "Actually, I don't need WiFi at the charging station anymore.",
+                "question_different_preference": "Can you find a charging station that has restroom facilities?",
+                "different_attribute": "Restroom facilities"
+            },
+            "preference_string_in_conversation": false,
+            "preference_string_in_user_sentences": false
+        },
+        {
+            "conversation_uuid": "00efb285-caba-4002-9c3a-27df2b9d5ea0",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Navigation and Routing; Routing; Priority for Shortest Time or Shortest Distance; Shortest Distance",
+            "extraction_conversation": [
+                {
+                    "USER": "I always prefer taking the shortest distance route over the quickest one, dear. Can you set my navigation accordingly?"
+                },
+                {
+                    "ASSISTANT": "Absolutely, I've set the navigation to prioritize the shortest distance for your routes. We're ready to go!"
+                }
+            ],
+            "next_conversation_question": "Hey, can you set up our route for today's trip?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "high",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "2",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': 'show me alternative routes', 'Assistant': 'You are on the fastest route. Here you can manually select an alternative route if you still want to change it.'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, could you make sure we're taking the route that has the shortest distance? I hate winding roads.",
+                "question_negate_preference": "I've been thinking, from now on let's always go for the scenic route, even if it's a bit longer, okay?",
+                "question_different_preference": "You know, I've been running late quite often. Could you start picking the quickest routes, time-wise, for my trips?",
+                "different_attribute": "Shortest Time"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": true
+        },
+        {
+            "conversation_uuid": "d07f456a-d166-4128-9268-86ad68ea1575",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Navigation and Routing; Traffic and Conditions; Traffic Information Source Preferences; NavFlow Updates",
+            "extraction_conversation": [
+                {
+                    "USER": "What's the quickest way to get to the Central Museum from here?"
+                },
+                {
+                    "ASSISTANT": "The quickest route to the Central Museum is via NH27 and will take approximately 35 minutes in the current traffic conditions."
+                },
+                {
+                    "USER": "Are there any roadworks or congestion on NH27 that might slow us down?"
+                },
+                {
+                    "ASSISTANT": "There are no reported roadworks on NH27, but there's minor congestion due to usual traffic. This shouldn't significantly affect your travel time."
+                },
+                {
+                    "USER": "Hmm, I've heard NavFlow provides good traffic updates. Can you use that to check for the latest traffic conditions?"
+                },
+                {
+                    "ASSISTANT": "Sure, I can access NavFlow updates. It shows that there is a slight buildup of traffic ahead but no major delays. They suggest staying on NH27 as it is still the fastest route."
+                },
+                {
+                    "USER": "Great, let's stick with NH27 then. I always find NavFlow to be reliable."
+                },
+                {
+                    "ASSISTANT": "Understood. I'll continue to monitor NavFlow updates as we proceed to ensure we're on the most efficient path to the Central Museum."
+                }
+            ],
+            "next_conversation_question": "Can you check the traffic updates before we head out?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "high",
+                "preference_strength_modulation": "subtly hinted at",
+                "conversation_length": "8",
+                "position_user_preference_in_conv": "5",
+                "few_shot_example": "{'User': 'can you route around the traffic jam', 'Assistant': 'The roads are currently clear on your route! We will reach the destination in about 00:07'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, can you make sure to keep those NavFlow updates coming while we drive? I like staying informed.",
+                "question_negate_preference": "You know, I think I've had enough of those NavFlow updates. Let's turn those off for good, alright?",
+                "question_different_preference": "I've been thinking, could we switch to using the in-car system for traffic updates from now on? I feel it might be more integrated with the vehicle.",
+                "different_attribute": "In-car system"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": false
+        },
+        {
+            "conversation_uuid": "48b61fb8-ef3d-422a-80e3-e1077683bb15",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Navigation and Routing; Parking; Preferred Parking Type; On-street",
+            "extraction_conversation": [
+                {
+                    "USER": "Could you help me get to the nearest post office"
+                },
+                {
+                    "ASSISTANT": "The closest post office is 3 kilometers away. Would you like directions to there"
+                },
+                {
+                    "USER": "Yes please, and avoid the highways if possible"
+                },
+                {
+                    "ASSISTANT": "Alright, I've set a route avoiding highways. It will take approximately 12 minutes to reach the post office"
+                },
+                {
+                    "USER": "Also, I prefer to park on the street rather than in a parking lot. It's easier for me to get in and out of the car that way"
+                },
+                {
+                    "ASSISTANT": "Understood. I'll look for on-street parking near the post office and include it in your route"
+                }
+            ],
+            "next_conversation_question": "Can you direct me to the closest coffee shop with convenient parking?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "very high - no questions",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "6",
+                "position_user_preference_in_conv": "5",
+                "few_shot_example": "{'User': 'Find street parking', 'Assistant': 'I have found these destinations in the category Street parking. Which one should I select?'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, could you look for on-street parking spots nearby?",
+                "question_negate_preference": "You know, I'm really not into on-street parking anymore, can we avoid those spots?",
+                "question_different_preference": "Let's find a parking-house this time, I prefer the extra security they offer.",
+                "different_attribute": "Parking-house"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": false
+        },
+        {
+            "conversation_uuid": "70a7aa55-feb2-46ec-a0d0-753127754de7",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Navigation and Routing; Parking; Preference for Parking with Security; Yes",
+            "extraction_conversation": [
+                {
+                    "USER": "I always like to park my car somewhere I know it will be safe. Can you find a secure parking lot nearby?"
+                },
+                {
+                    "ASSISTANT": "I've located several secure parking options close to us. The closest one offers surveillance cameras and a security patrol."
+                },
+                {
+                    "USER": "Perfect, that's exactly what I'm looking for. Please set that as our destination."
+                },
+                {
+                    "ASSISTANT": "Destination to the secure parking lot with surveillance is set. Would you like to start navigation now?"
+                },
+                {
+                    "USER": "Yes, let's start the navigation right away."
+                },
+                {
+                    "ASSISTANT": "Navigation is now active. We will reach our destination in approximately 15 minutes. The route is clear of heavy traffic."
+                }
+            ],
+            "next_conversation_question": "Can you suggest a place to park around here?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "high",
+                "preference_strength_modulation": "strongly emphasized",
+                "conversation_length": "6",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': 'Find street parking', 'Assistant': 'I have found these destinations in the category Street parking. Which one should I select?'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Could you locate a parking spot for me that has good security? I feel more at ease knowing my car is safe.",
+                "question_negate_preference": "Actually, let's not worry about security at the parking lots anymore; I'm fine parking anywhere.",
+                "question_different_preference": "You know, I'm okay with any parking spot now, security isn't a big deal for me these days.",
+                "different_attribute": "Indifferent to Parking Security"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": true
+        },
+        {
+            "conversation_uuid": "cd0e9c33-ad1d-404d-96da-a56aaaef3b23",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Vehicle Settings and Comfort; Climate Control; Fan Speed Preferences; High",
+            "extraction_conversation": [
+                {
+                    "USER": "I always like the fan running high when I'm driving, it keeps me alert."
+                },
+                {
+                    "ASSISTANT": "Certainly, I'm setting the fan speed to high now for you."
+                },
+                {
+                    "USER": "Thank you, dear. It gets a bit stuffy otherwise, especially in this Mariani heat."
+                },
+                {
+                    "ASSISTANT": "Understood. High fan speed should help maintain a comfortable environment inside the car."
+                },
+                {
+                    "USER": "Can you also make sure it stays on high even when I start the car again next time?"
+                },
+                {
+                    "ASSISTANT": "I'll ensure the fan speed is set to high for this trip, but I cannot store preferences for future trips."
+                },
+                {
+                    "USER": "That's alright. I guess I'll just ask you again when I need it."
+                },
+                {
+                    "ASSISTANT": "Of course, I'm here to adjust the settings any time you need. Just let me know and I'll take care of it for you."
+                }
+            ],
+            "next_conversation_question": "Could you adjust the climate settings for me, please?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "medium",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "8",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': 'turn on my seat warmer', 'Assistant': \"I'm increasing the intensity of the driver seat heating.\"}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, it's getting a bit stuffy in here, could you turn the fan up to high to get some good airflow going?",
+                "question_negate_preference": "I've realized I prefer a quieter ride, would you mind keeping the fan on a lower setting from now on?",
+                "question_different_preference": "I think a medium fan speed strikes the perfect balance, can we make that my standard setting for future drives?",
+                "different_attribute": "Medium"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": true
+        },
+        {
+            "conversation_uuid": "8e906bb9-28e2-407f-8ce4-4c368acc311e",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Entertainment and Media; Music; Favorite Songs; Asphalt Anthems by Gritty Lyricist (Rap)",
+            "extraction_conversation": [
+                {
+                    "USER": "You know I never get tired of that album Asphalt Anthems by Gritty Lyricist it's got the kind of rap that gets me going can you play it"
+                },
+                {
+                    "ASSISTANT": "Absolutely playing Asphalt Anthems by Gritty Lyricist now Enjoy your drive with some energetic rap beats"
+                }
+            ],
+            "next_conversation_question": "Hey, can you put on some music that you think I'd like?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "very high - no questions",
+                "preference_strength_modulation": "strongly emphasized",
+                "conversation_length": "2",
+                "position_user_preference_in_conv": "1",
+                "few_shot_example": "{'User': 'play Music', 'Assistant': \"OK. I've selected Music. I'm starting the playback.\"}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, can you play that track I love? You know, 'Asphalt Anthems' by Gritty Lyricist, it's such a rap banger.",
+                "question_negate_preference": "I think I'm over 'Asphalt Anthems' by Gritty Lyricist. Let's not play that rap stuff anymore.",
+                "question_different_preference": "I'm really into disco these days, especially 'Jenny's Dance' by Max Rythmo. Let's make that my new go-to tune!",
+                "different_attribute": "Jenny's Dance by Max Rythmo (Disco)"
+            },
+            "preference_string_in_conversation": false,
+            "preference_string_in_user_sentences": false
+        },
+        {
+            "conversation_uuid": "b9641775-f72a-416b-9e8c-54c9ee125d0d",
+            "user_uuid": "c18ade93-8738-4311-ad03-e40d4831c31d",
+            "user_preference": "Entertainment and Media; Radio and Podcasts; Favorite Podcast Genres; Health",
+            "extraction_conversation": [
+                {
+                    "USER": "Can we listen to something interesting while driving"
+                },
+                {
+                    "ASSISTANT": "Certainly, I can start a radio station or play a podcast for you"
+                },
+                {
+                    "USER": "I'd prefer a podcast, something about health and wellness if that's available"
+                },
+                {
+                    "ASSISTANT": "Playing the latest episode of 'Health Talks Daily' which offers insights on wellness and healthy living"
+                }
+            ],
+            "next_conversation_question": "Hey, can you recommend something to listen to while we're on the road?",
+            "meta_info": {
+                "level_of_proactivity_assistant": "very high - no questions",
+                "preference_strength_modulation": "clearly stated",
+                "conversation_length": "4",
+                "position_user_preference_in_conv": "3",
+                "few_shot_example": "{'User': 'FM radio', 'Assistant': 'FM. Which station?'}"
+            },
+            "maintenance_questions": {
+                "question_equal_preference": "Hey, could you recommend some health-focused podcasts for my drive?",
+                "question_negate_preference": "I'm looking to change things up. Can you play something other than health podcasts?",
+                "question_different_preference": "I'm in the mood for something fun. How about we listen to some entertainment podcasts?",
+                "different_attribute": "Entertainment"
+            },
+            "preference_string_in_conversation": true,
+            "preference_string_in_user_sentences": true
+        }
+    ]
+}

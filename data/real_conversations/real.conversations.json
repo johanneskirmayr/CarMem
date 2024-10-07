@@ -1,0 +1,157 @@
+{
+    "Restaurant": [
+        {
+            "User": "Show me restaurants nearby",
+            "Assistant": "I have found multiple destinations in the category Restaurants. Which one should I select?"
+        },
+        {
+            "User": "I'm really hungry right now",
+            "Assistant": "I have found these destinations for the category restaurant. Which one should I select?"
+        },
+        {
+            "User": "Fast Food Breakfast",
+            "Assistant": "I have only found the destination Razz's Breakfast Bar and Grill, 5307, Westfair Ave, Schofield, Wisconsin. Should I start the guidance?"
+        }
+    ],
+    "Gas Station": [
+        {
+            "User": "Take me to the nearest gas station",
+            "Assistant": "I have found these destinations in the category Gas station. Which one should I select?"
+        },        
+        {
+            "User": "Find me a Shell gas station",
+            "Assistant": "I have found multiple results for shell in the category gas station. Which one should I select?"
+        },        
+        {
+            "User": "what is my fuel usage today",
+            "Assistant": "The average consumption since the last time the trip data was reset is 6,9 l/100km. Are you interested in ways of reducing your consumption?"
+        }
+    ],
+    "Charging Station(in public)": [
+        {
+            "User": "Take me to the nearest charging station",
+            "Assistant": "I have found these destinations for the category Charging station. Which one should I select?"
+        },        
+        {
+            "User": "Take me to HPC",
+            "Assistant": "I have found multiple destinations in the category HPC. Which one should I select?"
+        },        
+        {
+            "User": "Where can I charge my car",
+            "Assistant": "I have found multiple destinations in the category charging station. Which one should I select?"
+        }
+    ],
+    "Grocery Shopping": [
+        {
+            "User": "Navigate to grocery store",
+            "Assistant": "I have found these destinations for the category Grocery store. Which one should I select?"
+        },        
+        {
+            "User": "Any supermarkets in the area",
+            "Assistant": "I have found multiple destinations in the category Supermarkets. Which one should I select?"
+        },        
+        {
+            "User": "Navigate to the local market",
+            "Assistant": "I have found multiple destinations in the category Market. Which one should I select?"
+        }
+    ],
+    "Routing": [
+        {
+            "User": "navigate to work place",
+            "Assistant": "No problem. Let's go to work."
+        },        
+        {
+            "User": "show me alternative routes",
+            "Assistant": "You are on the fastest route. Here you can manually select an alternative route if you still want to change it."
+        },        
+        {
+            "User": "avoid highways",
+            "Assistant": "I'm avoiding highways."
+        }
+    ],
+    "Traffic and Conditions": [
+        {
+            "User": "how is traffic on my way home",
+            "Assistant": "Traffic conditions in your area are perfect at the moment! I hope you have a nice drive!"
+        },        
+        {
+            "User": "can you route around the traffic jam",
+            "Assistant": "The roads are currently clear on your route! We will reach the destination in about 00:07"
+        },        
+        {
+            "User": "how is the traffic to my destination",
+            "Assistant": "You have a clear run in your area at the moment! In addition, there is currently one road closure."
+        }
+    ],    
+    "Parking": [
+        {
+            "User": "Take me to a parking space",
+            "Assistant": "I have found multiple destinations in the category Parking space. Which one should I select?"
+        },        
+        {
+            "User": "Find street parking",
+            "Assistant": "I have found these destinations in the category Street parking. Which one should I select?"
+        },        
+        {
+            "User": "start assistant for parking",
+            "Assistant": "Here is the assistant view. In this view you can see the planned operation of the assistants and start the operation directly."
+        }
+    ],
+    "Climate Control": [
+        {
+            "User": "turn off climate control",
+            "Assistant": "Okay, I will deactivate the air conditioning system."
+        },        
+        {
+            "User": "turn on my seat warmer",
+            "Assistant": "I'm increasing the intensity of the driver seat heating."
+        },        
+        {
+            "User": "i'm a little cold can you make it warmer",
+            "Assistant": "I'm raising the temperature, so it will be more comfortable right away. Let me know if it gets too warm for you."
+        }
+    ],
+    "Lighting and Ambience": [
+        {
+            "User": "change ambient lighting to blue",
+            "Assistant": "Good choice! I will set the light color to indigo."
+        },        
+        {
+            "User": "change color of ambient",
+            "Assistant": "Which color should I set for the lighting?"
+        },        
+        {
+            "User": "turn the brightness down",
+            "Assistant": "I'm setting the ambient lighting at level 10."
+        }
+    ],
+    "Music": [
+        {
+            "User": "play music",
+            "Assistant": "What music would you like to hear?"
+        },        
+        {
+            "User": "play Music",
+            "Assistant": "OK. I've selected Music. I'm starting the playback."
+        },        
+        {
+            "User": "Play popular country music",
+            "Assistant": "What music would you like to hear?"
+        }
+    ],
+    "Radio and Podcasts": [
+        {
+            "User": "play News Podcasts",
+            "Assistant": "I'm opening News Podcasts."
+        },        
+        {
+            "User": "FM radio",
+            "Assistant": "FM. Which station?"
+        },        
+        {
+            "User": "put on FM radio",
+            "Assistant": "Where should we go? Tell me the desired address or a point of interest."
+        }
+    ]
+
+}
