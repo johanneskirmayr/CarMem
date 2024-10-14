@@ -13,7 +13,6 @@ from langchain.chains.base import Chain
 from langchain_core.language_models import BaseLanguageModel
 from langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate
 from langchain_core.utils.function_calling import convert_pydantic_to_openai_function
-from langmem._internal.utils import ID_T
 from pydantic import BaseModel, ValidationError
 
 from utils.custom_logger import log_debug, log_error, log_info
@@ -97,7 +96,7 @@ class PreferenceMemory:
         name: Optional[str] = None,
         description: Optional[str] = None,
         custom_instructions: Optional[str] = None,
-        function_id: Optional[ID_T] = None,
+        function_id: Optional[str] = None,
     ) -> Chain:
 
         params = parameters.model_json_schema()

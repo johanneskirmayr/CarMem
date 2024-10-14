@@ -35,7 +35,7 @@ def parse_args():
         type=str,
         default="extraction/evaluation/gpt4o/extraction_for_eval_out_of_schema/dataset/extraction_for_eval.jsonl",
     )
-    parser.add_argument("--trace_by_langsmith", type=bool, default=True)
+    parser.add_argument("--trace_by_langsmith", type=bool, default=False)
     parser.add_argument(
         "--langsmith_project_name", type=str, default="eval_of_extraction"
     )

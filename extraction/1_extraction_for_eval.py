@@ -14,9 +14,6 @@ sys.path.append(str(project_root))
 
 import argparse
 
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from sklearn.preprocessing import MultiLabelBinarizer
-
 from extraction.mapping_category_to_label import convert_preference_to_labels
 from extraction.mapping_category_to_pyd_category import (
     category_to_pyd_category,

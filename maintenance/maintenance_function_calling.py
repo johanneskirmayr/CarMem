@@ -1,12 +1,11 @@
-import os
 from typing import Optional, Type
 
 from dotenv import load_dotenv
 from langchain.callbacks.manager import (
     CallbackManagerForToolRun,
 )
-from langchain.tools import BaseTool
 from pydantic import BaseModel, Field
+from langchain.tools import BaseTool
 from pymilvus import MilvusClient
 
 from config.config_loader import config
@@ -38,8 +37,10 @@ class UpdateInput(BaseModel):
 
 
 class Append(BaseTool):
-    name = "append_preference"
-    description = "appends incoming preference to database and keep existing preferences. Call if incoming preference attribute is different to existing preferences attributes, it can be of the same category"
+    name: str = "append_preference"
+    description: str = (
+        "appends incoming preference to database and keep existing preferences. Call if incoming preference attribute is different to existing preferences attributes, it can be of the same category"
+    )
     args_schema: Type[BaseModel] = AppendInput
 
     def _run(
@@ -65,8 +66,10 @@ class Append(BaseTool):
 
 
 class Pass(BaseTool):
-    name = "pass_preference"
-    description = "passes incoming preference (so it is not inserted in database) and keep existing preferences. Call if incoming preference attribute is equal or very similar to one existing preference attribute"
+    name: str = "pass_preference"
+    description: str = (
+        "passes incoming preference (so it is not inserted in database) and keep existing preferences. Call if incoming preference attribute is equal or very similar to one existing preference attribute"
+    )
     args_schema: Type[BaseModel] = PassInput
 
     def _run(
@@ -108,8 +111,10 @@ class Pass(BaseTool):
 
 
 class Update(BaseTool):
-    name = "update_preference"
-    description = "deletes one existing preference and insert incoming preference. Call if incoming preference attribute is updating or contradicting one existing preference attribute, either the text or the attribute"
+    name: str = "update_preference"
+    description: str = (
+        "deletes one existing preference and insert incoming preference. Call if incoming preference attribute is updating or contradicting one existing preference attribute, either the text or the attribute"
+    )
     args_schema: Type[BaseModel] = UpdateInput
 
     def _run(

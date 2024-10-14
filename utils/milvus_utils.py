@@ -20,7 +20,5 @@ def connect2milvusdb():
         "default",
         host=MILVUS_HOST,
         port=MILVUS_PORT,
-        user="root",
-        password=os.getenv("MILVUS_DB_PASSWORD"),
     )
     print("Connected")
