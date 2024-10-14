@@ -29,15 +29,15 @@ Valid json:
 """
 
 MAINTENANCE_QUESTION_PROMPT_MP = PromptTemplate(
-    template=maintenance_question_prompt_mp, 
+    template=maintenance_question_prompt_mp,
     input_variables=[
-        "user_preference", 
+        "user_preference",
         "conversation",
         "user_conversation_style",
         "different_preference",
-        "detail_category"
-        ]
-    )
+        "detail_category",
+    ],
+)
 
 maintenance_question_prompt_mnp = """
 Following preference is stored in a database: '{user_preference}'.
@@ -69,12 +69,12 @@ Valid json:
 """
 
 MAINTENANCE_QUESTION_PROMPT_MNP = PromptTemplate(
-    template=maintenance_question_prompt_mnp, 
+    template=maintenance_question_prompt_mnp,
     input_variables=[
-        "user_preference", 
+        "user_preference",
         "conversation",
         "user_conversation_style",
         "different_preference",
-        "detail_category"
-        ]
-    )
+        "detail_category",
+    ],
+)

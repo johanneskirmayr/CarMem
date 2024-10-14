@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class IncomingPreference(BaseModel):
     vector: list[float]
     text: str

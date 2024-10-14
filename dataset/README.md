@@ -39,10 +39,10 @@ The dataset can be inspected further in the notebook `/dataset/dataset_evaluatio
 
 To enhance or recreate the dataset, the following steps have to be done.
 
-1. Create user profiles: Run the file `create_user_profiles.py`. This will create by default 100 User Profiles with preferences sampled from `categories_v4.csv` and save it in the userprofiles folder.
+1. Create user profiles: Run the file `1_create_user_profiles.py`. This will create by default 100 User Profiles with preferences sampled from `categories_v4.csv` and save it in the userprofiles folder.
 
-2. Generate in-car conversations and retrieval utterances: Run the file `create_extraction_conv_and_retrieval_utterance.py`. Based on the user profiles, this will create 10 in-car conversations and retrieval utterances for each user. It saves the resulting data already in the dataset folder with the final dataset .jsonl structure.
+2. Generate in-car conversations and retrieval utterances: Run the file `2_create_extraction_conv_and_retrieval_utterance.py`. Based on the user profiles, this will create 10 in-car conversations and retrieval utterances for each user. It saves the resulting data already in the dataset folder with the final dataset .jsonl structure.
 
-3. Generate maintenance utterances: Run the file `create_maintenance_utterances.py`. This reads out the previously created dataset file and enhance each data point with 3 maintenance utterances (equal preference, negate preference, different preference).
+3. Generate maintenance utterances: Run the file `3_create_maintenance_utterances.py`. This reads out the previously created dataset file and enhance each data point with 3 maintenance utterances (equal preference, negate preference, different preference).
 
 
