@@ -1,15 +1,13 @@
-import numpy as np
-
 def category_to_pyd_category_sub_extra(input_string, category):
-   # Define the mapping of strings to numbers
-    if category=="main_category":
+    # Define the mapping of strings to numbers
+    if category == "main_category":
         mapping = {
             "Points of Interest": "PointsOfInterest",
             "Navigation and Routing": "NavigationAndRouting",
             "Vehicle Settings and Comfort": "VehicleSettingsAndComfort",
             "Entertainment and Media": "EntertainmentAndMedia",
         }
-    elif category=="subcategory":
+    elif category == "subcategory":
         mapping = {
             "Restaurant": "Restaurant",
             "Gas Station": "GasStation",
@@ -23,7 +21,7 @@ def category_to_pyd_category_sub_extra(input_string, category):
             "Music": "Music",
             "Radio and Podcasts": "RadioAndPodcast",
         }
-    elif category=="detail_category":
+    elif category == "detail_category":
         mapping = {
             "Favorite Cuisine": "favourite_cuisine",
             "Preferred Restaurant Type": "preferred_restaurant_type",
@@ -69,7 +67,7 @@ def category_to_pyd_category_sub_extra(input_string, category):
         }
     else:
         mapping = {}
-   
+
     # Check if the input string is in the mapping
     if input_string in mapping:
         mapping_result = mapping[input_string]
@@ -77,17 +75,18 @@ def category_to_pyd_category_sub_extra(input_string, category):
     else:
         # Raise an exception if the string is not found
         raise ValueError(f"No mapping found for string: {input_string}")
-    
+
+
 def category_to_pyd_category(input_string, category):
-   # Define the mapping of strings to numbers
-    if category=="main_category":
+    # Define the mapping of strings to numbers
+    if category == "main_category":
         mapping = {
             "Points of Interest": "points_of_interest",
             "Navigation and Routing": "navigation_and_routing",
             "Vehicle Settings and Comfort": "vehicle_settings_and_comfort",
             "Entertainment and Media": "entertainment_and_media",
         }
-    elif category=="subcategory":
+    elif category == "subcategory":
         mapping = {
             "Restaurant": "restaurant",
             "Gas Station": "gas_station",
@@ -101,7 +100,7 @@ def category_to_pyd_category(input_string, category):
             "Music": "music",
             "Radio and Podcasts": "radio_and_podcast",
         }
-    elif category=="detail_category":
+    elif category == "detail_category":
         mapping = {
             "Favorite Cuisine": "favourite_cuisine",
             "Preferred Restaurant Type": "preferred_restaurant_type",
@@ -147,7 +146,7 @@ def category_to_pyd_category(input_string, category):
         }
     else:
         mapping = {}
-   
+
     # Check if the input string is in the mapping
     if input_string in mapping:
         mapping_result = mapping[input_string]

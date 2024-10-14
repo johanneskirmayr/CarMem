@@ -1,7 +1,5 @@
-import numpy as np
-
 def detail_category_to_type(input_string) -> str:
-   # Define the mapping of strings to numbers
+    # Define the mapping of strings to numbers
     mapping = {
         "Favorite Cuisine": "MP",
         "favourite_cuisine": "MP",
@@ -86,7 +84,7 @@ def detail_category_to_type(input_string) -> str:
         "General News Source": "MNP",
         "general_news_source": "MNP",
     }
-   
+
     # Check if the input string is in the mapping
     if input_string in mapping:
         return str(mapping[input_string])

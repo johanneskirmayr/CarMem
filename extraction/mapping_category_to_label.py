@@ -1,8 +1,9 @@
 import numpy as np
 
+
 def string_to_number(input_string, category) -> int:
-   # Define the mapping of strings to numbers
-    if category=="main_category":
+    # Define the mapping of strings to numbers
+    if category == "main_category":
         mapping = {
             "Points of Interest": 0,
             "points_of_interest": 0,
@@ -14,7 +15,7 @@ def string_to_number(input_string, category) -> int:
             "entertainment_and_media": 3,
             "No Main Category": 4,
         }
-    elif category=="subcategory":
+    elif category == "subcategory":
         mapping = {
             "Restaurant": 4,
             "restaurant": 4,
@@ -39,7 +40,7 @@ def string_to_number(input_string, category) -> int:
             "Radio and Podcasts": 14,
             "radio_and_podcast": 14,
         }
-    elif category=="detail_category":
+    elif category == "detail_category":
         mapping = {
             "Favorite Cuisine": 15,
             "favourite_cuisine": 15,
@@ -123,18 +124,19 @@ def string_to_number(input_string, category) -> int:
             "favorite_podcast_shows": 54,
             "General News Source": 55,
             "general_news_source": 55,
-            "other": 56
+            "other": 56,
         }
     else:
         mapping = {}
-   
+
     # Check if the input string is in the mapping
     if input_string in mapping:
         return int(mapping[input_string])
     else:
         # Raise an exception if the string is not found
         raise ValueError(f"No mapping found for string: {input_string}")
-    
+
+
 def convert_preference_to_labels(preference) -> np.ndarray:
     label_list = []
     for key, value in preference.items():

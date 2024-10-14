@@ -29,10 +29,6 @@ Valid json:
 """
 
 NEXT_CONVERSATION_QUESTIONS_PROMPT = PromptTemplate(
-    template=conversation_extraction_prompt, 
-    input_variables=[
-        "user_preference", 
-        "conversation",
-        "user_conversation_style"
-        ]
-    )
+    template=conversation_extraction_prompt,
+    input_variables=["user_preference", "conversation", "user_conversation_style"],
+)

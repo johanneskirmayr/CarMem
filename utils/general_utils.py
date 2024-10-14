@@ -1,22 +1,24 @@
 import os
 
+
 def load_chat_history(memory):
     conversation = ""
     for msg in memory.chat_memory.messages:
         if msg.type == "human":
             conversation += f"Human: {msg.content}\n"
         else:
-            conversation+=f"AI: {msg.content}\n"
+            conversation += f"AI: {msg.content}\n"
     return conversation
+
 
 def get_project_root():
     """
     Get the project root by finding the directory that contains .git
-    """   
+    """
     current_dir = os.getcwd()
-   
+
     # Define the markers that signify the root of the project
-    markers = ['.git']
+    markers = [".git"]
 
     # Start from the current directory and move up until we find a marker
     root = current_dir
@@ -30,6 +32,7 @@ def get_project_root():
             raise FileNotFoundError("Could not find project root")
         root = parent_dir
 
+
 def stringify_conversations(messages) -> str:
     formatted_messages = []
     for msg in messages:
@@ -38,5 +41,5 @@ def stringify_conversations(messages) -> str:
         else:
             formatted_messages.append(f"{msg['role']}: {msg['content']}")
 
-    result_string = '\n'.join(formatted_messages)
+    result_string = "\n".join(formatted_messages)
     return result_string

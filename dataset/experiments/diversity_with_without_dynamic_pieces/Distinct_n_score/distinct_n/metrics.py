@@ -1,17 +1,17 @@
 # MIT License
-# 
+#
 # Copyright (c) 2019 Cong Feng.
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -20,7 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from dataset.experiments.diversity_with_without_dynamic_pieces.Distinct_n_score.distinct_n.utils import ngrams
+from dataset.experiments.diversity_with_without_dynamic_pieces.Distinct_n_score.distinct_n.utils import (
+    ngrams,
+)
 
 __all__ = ["distinct_n_sentence_level", "distinct_n_corpus_level"]
 
@@ -45,4 +47,6 @@ def distinct_n_corpus_level(sentences, n):
     :param n: int, ngram.
     :return: float, the average value.
     """
-    return sum(distinct_n_sentence_level(sentence, n) for sentence in sentences) / len(sentences)
+    return sum(distinct_n_sentence_level(sentence, n) for sentence in sentences) / len(
+        sentences
+    )

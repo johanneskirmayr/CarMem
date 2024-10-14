@@ -1,17 +1,17 @@
 # MIT License
-# 
+#
 # Copyright (c) 2019 Cong Feng.
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -28,8 +28,14 @@ from itertools import chain
 __all__ = ["ngrams"]
 
 
-def pad_sequence(sequence, n, pad_left=False, pad_right=False,
-                 left_pad_symbol=None, right_pad_symbol=None):
+def pad_sequence(
+    sequence,
+    n,
+    pad_left=False,
+    pad_right=False,
+    left_pad_symbol=None,
+    right_pad_symbol=None,
+):
     """
     Returns a padded sequence of items before ngram extraction.
 
@@ -62,8 +68,14 @@ def pad_sequence(sequence, n, pad_left=False, pad_right=False,
     return sequence
 
 
-def ngrams(sequence, n, pad_left=False, pad_right=False,
-           left_pad_symbol=None, right_pad_symbol=None):
+def ngrams(
+    sequence,
+    n,
+    pad_left=False,
+    pad_right=False,
+    left_pad_symbol=None,
+    right_pad_symbol=None,
+):
     """
     Return the ngrams generated from a sequence of items, as an iterator.
     For example:
@@ -99,8 +111,9 @@ def ngrams(sequence, n, pad_left=False, pad_right=False,
     :type right_pad_symbol: any
     :rtype: sequence or iter
     """
-    sequence = pad_sequence(sequence, n, pad_left, pad_right,
-                            left_pad_symbol, right_pad_symbol)
+    sequence = pad_sequence(
+        sequence, n, pad_left, pad_right, left_pad_symbol, right_pad_symbol
+    )
 
     history = []
     while n > 1:

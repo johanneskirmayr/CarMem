@@ -59,20 +59,19 @@ Remember: the inclusion of any other preference ('avoid toll roads', 'avoid heav
 """
 
 EXTRACTION_CONVERSATION_PROMPT = PromptTemplate(
-    template=conversation_extraction_prompt, 
+    template=conversation_extraction_prompt,
     input_variables=[
-        "topic", 
-        "attribute", 
+        "topic",
+        "attribute",
         "user_profile",
         "user_conversation_style",
-        "car_location_city"
-        "level_of_proactivity_assistant",
+        "car_location_city" "level_of_proactivity_assistant",
         "preference_strength_modulation",
         "conversation_length",
         "position_user_preference_in_conv",
-        "few_shot_examples"
-        ]
-    )
+        "few_shot_examples",
+    ],
+)
 
 conversation_extraction_prompt_no_preference = """
 #### Instructions:
@@ -132,19 +131,18 @@ Remember: the inclusion of any other preference ('avoid toll roads', 'avoid heav
 """
 
 EXTRACTION_CONVERSATION_PROMPT_NO_PREFERENCE = PromptTemplate(
-    template=conversation_extraction_prompt_no_preference, 
+    template=conversation_extraction_prompt_no_preference,
     input_variables=[
-        "topic", 
-        "attribute", 
+        "topic",
+        "attribute",
         "user_profile",
         "user_conversation_style",
-        "car_location_city"
-        "level_of_proactivity_assistant",
+        "car_location_city" "level_of_proactivity_assistant",
         "preference_strength_modulation",
         "conversation_length",
         "position_user_preference_in_conv",
-        "few_shot_examples"
-        ]
-    )
+        "few_shot_examples",
+    ],
+)
 # The conversation length should be 10 turns.
 # The user preference should be revealed around the 5th turn.
