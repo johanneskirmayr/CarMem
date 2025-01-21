@@ -1,6 +1,6 @@
 # CarMem: Enhancing Long-Term Memory in LLM Voice Assistants through Category-Bounding
 
-Welcome to the repository for the Paper "CarMem: Enhancing Long-Term Memory in LLM Voice Assistants through Category-Bounding"
+Welcome to the repository for the Paper [CarMem: Enhancing Long-Term Memory in LLM Voice Assistants through Category-Bounding](https://aclanthology.org/2025.coling-industry.29/).
 
 This repository contains the CarMem dataset, the code to generate the dataset, and the code to replicate the experiments from the paper.
 
